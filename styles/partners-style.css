@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+body {
+    background-color: black;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: relative;
+    padding: 1rem 2rem;
+}
+
+.mun__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mun__navbar-logo img{
+    width: 6.25rem;
+    height: auto;
+}
+
+.mun__navbar-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.mun__navbar-links li{
+    list-style: none;
+}
+
+.mun__navbar-links a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.mun__navbar-links a:hover{
+    color: #F4D394;
+}
+
+.mun__navbar-togglebtn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.mun__navbar #register{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #F4D394;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.mun__navbar #register:hover{
+    color: #fff;
+}
+
+.mun__navbar-dropdown{
+    display: none;
+    position: absolute;
+    right: 0.8rem;
+    height: 0;
+    /* top: 4rem; */
+    /* width: 300px; */
+    overflow: hidden;
+    /* transition: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.mun__navbar-dropdown.open{
+    height: 17vh;
+    z-index: 999;
+}
+
+.mun__navbar-dropdown li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mun__navbar-dropdown a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.mun__navbar-dropdown a:hover{
+    color: #F4D394;
+}
+
+/*  Media Queries of the Navigation Bar */
+
+@media (max-width:1175px) {
+    .mun__navbar-links{
+        display: none;
+    }
+
+    .mun__navbar-togglebtn{
+        display: block;
+    }
+
+    .mun__navbar-dropdown{
+        display: block;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #594E3A;
+        border-radius: 20px;
+    }
+}
+
+.committes-heading {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    font-size: 6em;
+    font-weight: 800;
+    letter-spacing: 15px;
+}
+
+#comming-soon{
+    color: #f4d394;
+    font-size: 3rem; 
+    margin: top 100px;
+}
+
+.background-image-of-sg-message {
+    position: relative;
+    background-image: url('../Assets/logo-opacity-30.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 120vh;
+}
+
+@media (max-width:1000px){
+    .committes-heading > center{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+      }
+}
+@media (max-width:500px){
+    header{
+        padding: 0.5rem 1rem;
+    }
+    .mun__navbar-logo img{
+        width: 5rem;
+        height: auto;
+    }
+    .committes-heading > center{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        letter-spacing: 0.5rem;
+        margin-top: 2rem;
+      }
+      center #comming-soon{
+        color: #f4d394;
+        font-size: 1.5rem; 
+    }
+    #register{
+        padding-right: 3rem;
+        padding-top: 0.6rem;    
+    }
+}
+.partner-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .partner-image {
+    max-width: 55%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .partner-images {
+      flex-direction: column;
+    }
+  
+    .partner-image {
+      max-width: 90%;
+    }
+  }
+  .partner-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #comming-soon {
+    font-size: 34px;
+    font-weight: bold;
+    color:f4d394;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+  }
+
+  #comming-soon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #f0a500;
+    transition: width 0.3s ease;
+  }
+
+  .partner-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .partner-image {
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .partner-image:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .partner-image:nth-child(even):hover {
+    transform: scale(1.1) rotate(-5deg);
+  }

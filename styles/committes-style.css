@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body{
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+body {
+    background-color: black;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: relative;
+    padding: 1rem 2rem;
+}
+
+.mun__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mun__navbar-logo img{
+    width: 6.25rem;
+    height: auto;
+}
+
+.mun__navbar-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.mun__navbar-links li{
+    list-style: none;
+}
+
+.mun__navbar-links a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.mun__navbar-links a:hover{
+    color: #F4D394;
+}
+
+.mun__navbar-togglebtn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.mun__navbar #register{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #F4D394;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.mun__navbar #register:hover{
+    color: #fff;
+}
+
+.mun__navbar-dropdown{
+    display: none;
+    position: absolute;
+    right: 0.8rem;
+    height: 0;
+    /* top: 4rem; */
+    /* width: 300px; */
+    overflow: hidden;
+    /* transition: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.mun__navbar-dropdown.open{
+  height: 17vh;
+  z-index: 999;
+}
+
+.mun__navbar-dropdown li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mun__navbar-dropdown a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.mun__navbar-dropdown a:hover{
+    color: #F4D394;
+}
+
+/*  Media Queries of the Navigation Bar */
+
+@media (max-width:1175px) {
+    .mun__navbar-links{
+        display: none;
+    }
+
+    .mun__navbar-togglebtn{
+        display: block;
+    }
+
+    .mun__navbar-dropdown{
+        display: block;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #594E3A;
+        border-radius: 20px;
+    }
+}
+
+@media(max-width:460px){
+    .mun__navbar-logo img{
+        width: 4.6rem;
+    }
+}
+
+.committes-heading{
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: 15px;
+    color: white;
+}
+
+
+@media (max-width:600px){
+  .committes-heading{
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 8px;
+    color: white;
+}
+}
+
+.section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#TC .left{
+  background: url("../Assets/11-removebg-preview.png")
+    no-repeat center / cover ;
+        background-color: #594E3A;
+    
+  }
+  #UNSC .left{
+  background: url("../Assets/13-removebg-preview.png")
+    no-repeat center center ;
+        background-color: #594E3A;
+
+}
+  #AIIPM .left{
+  background: url("../Assets/9-removebg-preview.png")
+    no-repeat center / cover;
+        background-color: #594E3A;
+
+}
+  #G20 .left{
+  background: url("../Assets/6-removebg-preview.png")
+    no-repeat center / cover;
+        background-color: #594E3A;
+
+}
+  #UNHRC .left{
+  background: url("../Assets/MUN_WOSY-removebg-preview.png")
+    no-repeat center center / cover;
+        background-color: #594E3A;
+
+}
+  #UNHR .left{
+  background: url("../Assets/11-removebg-preview.png")
+    no-repeat center / cover;
+        background-color: #594E3A;
+
+}
+  #UNICEF .left{
+  background: url("../Assets/5-removebg-preview.png")
+    no-repeat center / cover;
+        background-color: #594E3A;
+
+}
+  #FAO .left{
+  background: url("../Assets/10-removebg-preview.png")
+    no-repeat center / cover;
+    background-color: #594E3A;
+
+}
+#UNGA .left{
+  background: url("../Assets/12-removebg-preview.png")
+    no-repeat center / cover;
+    background-color: #594E3A;
+
+}
+#WTO .left{
+  background: url("../Assets/14-removebg-preview.png")
+    no-repeat center / cover;
+    background-color: #594E3A;
+
+}
+#LS .left{
+  background: url("../Assets/15-removebg-preview.png")
+    no-repeat center / cover;
+    background-color: #594E3A;
+
+}
+#UNW .left{
+  background: url("../Assets/16-removebg-preview.png")
+    no-repeat center / cover;
+    background-color: #594E3A;
+}
+#UNODC .left{
+  background: url("../Assets/17-removebg-preview.png")
+    no-repeat center / cover;
+    background-color: #594E3A;
+}
+#YP .left{
+  background: url("../Assets/youth_parliment.png")
+    no-repeat center / cover;
+    background-color: #594E3A;
+}
+#IP .left{
+  background: url("../Assets/Screenshot_2024-04-04_at_5.48.23â_¯PM-transformed.png")
+    no-repeat center / cover;
+    background-color: #594E3A;
+
+}
+.left {
+  width: 80%;
+  height: 800px;
+}
+/* #hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  background-color: #000;
+  padding-top: 10vh;
+} */
+
+.sec-heading {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  letter-spacing: 1px;
+  left: 0;
+  font-weight: 500;
+  padding: 20px 0;
+  background-image: linear-gradient(90deg, #5fc9fa, #9752eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+
+/* .btn {
+  display: block;
+  padding: 16px;
+  background: #3d0b79;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  transition: all 0.4s;
+  margin: auto;
+  border: none;
+  position: relative;
+  cursor: pointer;
+
+} */
+
+
+
+.right2 {
+  width: 50%;
+  min-height: 400px;
+   background: #121212;
+  background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  color: white;
+  margin-left: -120px;
+  z-index: 1;
+}
+.right2 h1 {
+  font-size: 1.3rem;
+}
+.right2 p {
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  padding:  14px 20px;
+}
+.imgBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000);
+}
+
+.imgBox h1 {
+  position: absolute;
+  bottom: 43px;
+  left: -5px;
+  font-size: 1.8rem;
+  color: white;
+  z-index: 1;
+  padding: 35px;
+  text-align: left;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Responsive */
+@media only screen and (max-width:400px){
+  .navvbar{
+    display: none;
+  }
+  .sec-heading{
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 1008px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .section{
+    margin: 10vh 0;
+  }
+  .sec-heading{
+    font-size: 3rem;
+  }
+  .left {
+    width: 100%;
+    height: 600px;
+  }
+  .right2 {
+    width: 90%;
+    margin: 0;
+    margin-top: -100px;
+  }
+  .left h1{
+    bottom: 98px;
+  }
+}
